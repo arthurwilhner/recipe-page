@@ -15,8 +15,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Here](https://github.com/arthurwilhner/social-links-profile)
-- Live Site URL: [Here](https://arthurwilhner.github.io/social-links-profile/)
+- Solution URL: [Here](https://github.com/arthurwilhner/recipe-page)
+- Live Site URL: [Here](https://arthurwilhner.github.io/recipe-page/)
 
 ## My process
 
