@@ -23,8 +23,6 @@ body {
     padding: 2rem;
     font-family: 'Outfit', sans-serif;
     color: var(--color-text);
-    padding-bottom: 16px;
-    padding-top: 16px;
 }
 
 .card {
@@ -46,19 +44,23 @@ body {
 
 h1, h2 {
     font-family: 'Young Serif', serif;
-    color: var(--color-title);
-}
-
-h3, h4, h5 {
-    font-family: 'Young Serif', serif;
-    color: var(--color-step-title);
+    
 }
 
 .card-title {
+    color: var(--color-title);
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 24px;
     line-height: 1;
+}
+
+
+.section-title {
+    color: var(--color-step-title);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 24px;
 }
 
 .card-text {
@@ -71,20 +73,15 @@ h3, h4, h5 {
     background-color: var(--color-prep-bg);
     padding: 28px;
     border-radius: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .prep-title {
     color: var(--color-prep-title);
     font-size: 20px;
     margin-bottom: 16px;
-}
-
-.step-title {
-    color: var(--color-step-title);
-    font-size: 30px;
-    margin-bottom: 16px;
-    list-style-position: inside;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
 }
 
 .prep-time-box ul {
@@ -99,20 +96,27 @@ h3, h4, h5 {
     line-height: 1.5;
 }
 
-
 .prep-time-box li::marker {
     color: var(--color-prep-title);
     font-size: 12px;
 }
 
+
+.ingredients-section,
+.instructions-section {
+    border-bottom: 1px solid hsl(30, 18%, 87%); 
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+}
+
+
 .ingredients-list {
     list-style-position: inside; 
     padding-left: 8px;
-    margin-bottom: 32px; 
+    
 }
 
 .ingredients-list li {
-    padding-top: 4px;
     padding-left: 16px; 
     margin-bottom: 8px;
     line-height: 1.5;
@@ -122,7 +126,7 @@ h3, h4, h5 {
     color: var(--color-step-title); 
 }
 
-.instructions-list{
+.instructions-list {
     list-style-position: outside;
     padding-left: 20px;
     list-style-type: decimal;
@@ -140,6 +144,7 @@ h3, h4, h5 {
     font-family: 'Outfit', sans-serif;
 }
 
+
 .nutrition-table {
     width: 100%; 
     border-collapse: collapse; 
@@ -154,11 +159,27 @@ h3, h4, h5 {
     border-bottom: none; 
 }
 
+
 .nutrition-table td {
     padding: 12px 0 12px 32px;
+    color: var(--color-step-title); 
+    font-weight: 700; 
 }
 
-.nutrition-table td:last-child {
-    color: var(--color-step-title);
-    font-weight: 700;
+.nutrition-table th {
+    padding: 12px 0 12px 32px;
+    text-align: left; 
+    font-weight: 400; 
+    color: var(--color-text); 
+    width: 50%; 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    .card {
+        padding: 32px;
+        border-radius: 0;
+    }
 }
